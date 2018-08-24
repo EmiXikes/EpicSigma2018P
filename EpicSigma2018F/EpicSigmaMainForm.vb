@@ -214,13 +214,16 @@ Public Class EpicSigmaMainFrame
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
 
-        Dim SelectedIndexes As New List(Of Integer)
+        MsgBox("Test edit from home!")
 
-        For Each TRow In TableForDXFExtractSets.SelectedRows
-            SelectedIndexes.Add(TRow.Index)
-        Next
 
-        MsgBox(SigmaInst.RunFilter(SelectedDxfItems, SigmaInst.ActiveTemplate)(0).AssociatedDxfItems.Count)
+        'Dim SelectedIndexes As New List(Of Integer)
+
+        'For Each TRow In TableForDXFExtractSets.SelectedRows
+        '    SelectedIndexes.Add(TRow.Index)
+        'Next
+
+        'MsgBox(SigmaInst.RunFilter(SelectedDxfItems, SigmaInst.ActiveTemplate)(0).AssociatedDxfItems.Count)
 
     End Sub
 
